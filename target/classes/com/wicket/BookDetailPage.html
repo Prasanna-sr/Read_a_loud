@@ -1,0 +1,67 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <title>Wicket Examples - guestbook</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+  <span wicket:id="mainNavigation"/>
+
+  <form>
+  <table>
+  	<tr>
+      <td align="right">Title:</td>
+      <td>
+        <span wicket:id = "title">
+        Once upon a time
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">Author:</td>
+      <td>
+        <span wicket:id = "author">
+        John Peter
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">Category:</td>
+      <td>
+        <span wicket:id = "category">
+        novel
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">Description:</td>
+      <td>
+        <span wicket:id = "description">
+        This is a book with a old story.
+        </span>
+      </td>
+    </tr>
+  </table>
+  
+    <tr> Add your comment here: </tr>
+    <p>
+    <textarea wicket:id="text">This is a comment</textarea>
+    <input type="text" wicket:id="comment" class="nospam" onfocus="getElementById('formsubmit').focus();"/>
+    <p>
+    <input type="submit" value="Submit" id="formsubmit"/>
+  </form>
+  <p/>
+  <span wicket:id="comments">
+    <p>
+        <span wicket:id="date">1/1/2004</span><br>
+        <span wicket:id="text">Comment text goes here.</span>
+    </p>
+  </span>
+  <wicket:remove>
+    <p>
+        1/2/2004<br/>
+        More comment text here.
+    </p>
+  </wicket:remove>
+</body>
+</html>
+

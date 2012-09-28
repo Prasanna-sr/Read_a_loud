@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+label {
+	background-color: #eee;
+	padding: 4px;
+}
+ 
+.feedbackPanelERROR {
+	color: red;
+}
+body{
+background-color:green;
+padding: 20px;
+}
+#footer{
+font-size:small;
+text-align: center;
+border-top	: 1px solid black;
+
+}
+</style>
+</head>
+<a href="#" wicket:id="logout">Logout</a>
+<body>
+	<h1>Read A Loud - My Bookslist</h1>
+ 		
+ 		Please select the relevant book
+		<table border = "1">
+			<tr wicket:id="eachbook">
+				<td widcket:id="id">1</td>
+				<td><a wicket:id="detailsLink"><span wicket:id="name">Book1</span></a></td>
+			</tr>
+		</table>
+</body>
+ <p id="footer">Read a Loud</p>
+</html>

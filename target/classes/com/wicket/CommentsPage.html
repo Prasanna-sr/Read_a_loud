@@ -1,0 +1,90 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+<title>Read a Loud - Book Information & Comments</title>
+<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+<style type="text/css" >
+body{
+background-color:green;
+padding: 20px;
+}
+#footer{
+font-size:small;
+text-align: center;
+border-top	: 1px solid black;
+
+}
+</style>
+</head>
+<a href="#" wicket:id="logout">Logout</a>
+<body>
+
+<h1>Read A Loud - Book Details with Comments & Ratings</h1>
+
+	<table>
+		<tr>
+			<td >Title:</td>
+			<td><span wicket:id="title"> Good Luck </span></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td >Author:</td>
+			<td><span wicket:id="author"> Mark Twain </span></td>
+		</tr>
+	</table>
+	<table>
+
+		<p />
+		Book Content for reference:
+		<p>
+			<textarea wicket:id="content" cols="80" rows="10" >This is the book content</textarea>
+		<p>
+	</table>
+
+	<span wicket:id="comments">
+		<p>
+			<span wicket:id="timestamp">1/1/2004</span><br> <span
+				wicket:id="comments">Comment text goes here.</span>
+		</p>
+	</span>
+
+	<table>
+		<wicket:remove>
+			<p>
+				1/2/2004<br /> More comment text here.
+			</p>
+		</wicket:remove>
+
+	</table>
+
+	<form wicket:id="commentForm">
+
+		Add your comment here:
+		<p>
+			<textarea wicket:id="comments">This is a comment</textarea>
+		</p>
+		<tr>
+	<td>
+	<select wicket:id="integer">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+	</td>
+	Choose a rating
+	</tr>
+
+		<input type="submit" value="Submit" id="formsubmit" />
+	</form>
+	
+
+</body>
+
+  
+  <p id="footer">Read a Loud</p>
+ 
+
+</html>
+
